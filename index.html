@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>my site</title>
+  </head>
+  <body>
+    {
+    font-family: 'Inter', sans-serif;
+    /* Apply the gradient background using Tailwind utility classes on the body or a main div instead if preferred */
+    /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    min-height: 100vh;
+}
+
+.google-btn {
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.google-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.loading-spinner {
+    border: 3px solid rgba(0, 0, 0, 0.1); /* Adjusted border color for visibility */
+    border-radius: 50%;
+    border-top: 3px solid #3b82f6; /* Blue */
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Apply blur effect using Tailwind utility class 'backdrop-blur-md' or similar if possible */
+/* Or define custom class if needed */
+.card-blur {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+  </body>
+</html>
